@@ -58,7 +58,7 @@ namespace xadrez_console
                     imprimirPeca(tab.peca(i, j));
                    Console.BackgroundColor = fundoOriginal;
                 }
-                Console.WriteLine();
+                Console.WriteLine(); 
             }
             Console.WriteLine("   a b c d e f g h ");
             Console.BackgroundColor = fundoOriginal;
@@ -68,7 +68,8 @@ namespace xadrez_console
         public static PosicaoXadrez lerPosicaoXadrez()
         {
             string s = Console.ReadLine();
-            char coluna = s[0];
+            char v = s[0];
+            char coluna = v;
             int linha = int.Parse(s[1] + "");
             return new PosicaoXadrez(coluna, linha);
         }
